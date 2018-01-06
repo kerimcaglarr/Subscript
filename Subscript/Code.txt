@@ -1,0 +1,66 @@
+
+
+import UIKit
+
+
+struct Arac{
+
+    var arabalar = ["Murat","Doğan","Şahin","Serçe","Kartal","BMW"]
+
+    
+
+    func arabaSec(index:Int)->String{
+
+        return arabalar[index]
+
+    }
+
+}
+
+var araba = Arac()
+
+araba.arabaSec(index: 0)
+
+struct Arac2{
+
+    var arabalar2 = ["Murat","Doğan","Şahin","Serçe","Kartal","BMW"]
+
+    
+
+    subscript(index:Int)->String{
+
+        return arabalar2[index]
+
+    }
+
+}
+
+var araba2 = Arac2()
+
+araba2[0]
+
+// [String:String]
+
+// [String:Int]
+
+class Sehirler{
+
+    var iller = ["Adana" : 1, "Adıyaman" : 2 , "Ankara" : 6, "İstanbul" : 34]
+
+    
+
+    subscript(key:String) -> Int{
+
+        return iller[key]!
+
+    }
+
+    
+
+}
+
+var sehir = Sehirler()
+
+sehir["Ankara"]
+
+sehir["İstanbul"]
